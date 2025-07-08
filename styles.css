@@ -1,0 +1,238 @@
+.logo {
+    font-size: 5%;
+    color: white;
+    text-align: center; /* Center the logo text */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+    background-color: #fafafa; /* Optional background color */
+}
+header {
+    width: 100%; /* Make the header span the full width */
+    background-color: #29682b; /* Keep the header background color */
+    padding: 1% 3%;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+a{color:red;}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #29682b;
+    padding: 10px 20px;
+}
+.logo {
+    font-size: 3rem;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.8rem;
+    }
+    header {
+        padding: 1% 2%;}
+
+}
+
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+}
+
+.nav-links {
+   list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+/* 
+Styles for the pricing table:
+
+.pricing-table:
+- Sets the table to take full width of the container.
+- Enables border-collapse for cleaner borders.
+- Adds margin for spacing and sets font size and text alignment.
+
+.pricing-table th, .pricing-table td:
+- Adds a border with a solid style and padding for spacing.
+
+.pricing-table th:
+- Applies a background color and text color for table headers.
+
+.pricing-table tr:nth-child(even):
+- Alternates row background color for better readability.
+
+.pricing-table tr:hover:
+- Changes the background color of a row when hovered for interactivity.
+
+.pricing-table td:
+- Centers the text inside table cells.
+*/
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 3% 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.pricing-table th, 
+.pricing-table td {
+    border: 1% solid #afabab;
+    padding: 3%;
+}
+
+.pricing-table th {
+    background-color: #29682b;
+    color: rgb(182, 174, 174);
+}
+
+.pricing-table tr:nth-child(even) {
+    background-color: #cac6c6;
+}
+
+.pricing-table tr:hover {
+    background-color: #a5a3a3;
+}
+
+.pricing-table td {
+    text-align: center;
+}
+
+.container {
+    background-color: white;
+    width: 350px; /* Increase width for better responsiveness */
+    padding: 30px 5%; /* Adjust padding for better spacing */
+    border-radius: 5px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; /* Increase max-width for larger screens */
+    position: relative; /* Position relative for absolute positioning of the form message */
+    margin: 10px auto; /* Center the container */
+    box-sizing: border-box; /* Include padding in width calculation */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+
+}
+
+.contactForm{
+    position: relative;
+    padding-bottom: 50px; /* Add padding to the bottom for the button */
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav-links when screen width is <= 768px */
+        flex-direction: column; /* Stack links vertically */
+        text-align: center; /* Center align text */
+    }
+    .container {
+        padding: 15px 5%; /* Reduce padding for smaller screens */}
+    .burger {
+         display: block; /* Show burger icon on smaller screens */
+        }
+    .nav-links.nav-active {
+        display: flex; /* Show nav-links when burger is clicked */  
+    }
+    .burger.toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .burger.toggle .line2 {
+        opacity: 0;
+    }
+    .burger.toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px 3%; /* Further reduce padding for very small screens */
+    }
+    .burger {
+        display: block; /* Show burger icon on smaller screens */
+    }
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 1px;
+}
+
+button {
+    background-color: #29682b;
+    color: white;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-align: left;
+    bottom: 5px; /* Position the button at the bottom of the container */
+    position:absolute;
+    right: 19px; /* Center the button horizontally */
+    font-size: medium;
+}
+.form-group {
+    margin-bottom: 20px; /* Add spacing between form groups */
+}
+input, textarea {
+    width: 100%; /* Full width of the container */
+    padding: 5px 10%; /* Adjust padding for better spacing */
+    margin: 1px 0; /* Reduce vertical spacing between elements */
+    display: block; /* Block-level element for proper alignment */
+    border: 1px solid #56767ba1; /* Border styling */
+    border-radius: 1px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: left; /* Center text inside the input/textarea */
+
+
+}
+
+button:hover {
+    background-color: #29682a;
+}
+/* The .error class is used to hide error messages initially */
+.error {
+    color: red;
+    font-size: 0.875em;
+    display: none;
+}
+.form-message {
+    margin-top: 15px;
+    text-align: center;
+}
