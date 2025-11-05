@@ -4,4 +4,4 @@ Este é um projeto de uma página de início simples para a Agrotech, desenvolvi
 
 ## Como executar
 
-1.  Abra o arquivo `index.html` em seu navegador.
+1.  Abra o arquivo `index.html` em seu navegador.1
